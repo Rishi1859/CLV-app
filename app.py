@@ -39,7 +39,7 @@ if uploaded_file:
     with col2:
         st.plotly_chart(px.histogram(rfm,x="Frequency",nbins=30,title="Frequency Distribution"),use_container_width=True)
     with col3:
-        st.plotly_chart(px.histogram(rfm x="Monetary",nbins=30,title="Monetary Value Distribution"),use_container_width=True)
+        st.plotly_chart(px.histogram(rfm,x="Monetary",nbins=30,title="Monetary Value Distribution"),use_container_width=True)
     st.subheader("🤖 CLV Model Training")
     X = rfm[["Recency","Frequency"]]
     y = rfm["Monetary"]
