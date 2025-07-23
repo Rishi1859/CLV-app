@@ -11,7 +11,7 @@ st.title("Customer Lifetime Value (CLV) Prediction App")
 st.sidebar.header("Upload Excel Dataset")
 uploaded_file = st.sidebar.file_uploader("Choose the `online_retail_II.xlsx` file",type=["xlsx"])
 if uploaded_file:
-    data = pd.read_excel(uploaded_file,sheet_name='Year 2010-2011')
+    data = pd.read_excel(uploaded_file)
     st.subheader("🔍 Data Overview")
     st.write("Shape of dataset:",data.shape)
     st.dataframe(data.head())
